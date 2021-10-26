@@ -1,1 +1,1 @@
-qualquer texto
+qualquer texto editado
