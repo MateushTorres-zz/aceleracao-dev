@@ -1,0 +1,1 @@
+{"id":5200,"uid":"24b7abe7-1c05-44ef-8f87-3ccd3ceceef0","credit_card_number":"1228-1221-1221-1431","credit_card_expiry_date":"2023-11-16","credit_card_type":"laser"}
