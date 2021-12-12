@@ -1,14 +1,13 @@
 <?php
+include 'funcoes.php';
 
-require_once "funcoes.php";
+$soma1 = rand(1,10000);
+$soma2 = rand(1,10000);
+$res = $soma1+$soma2;
+$nome = (string) $res;
 
-echo soma(123,321);
-
-parOuImpar(8);
-
-$frase = "Quantidade de caracteres = ";
-$n = contadorDeCaracteres($frase);
-
-echo "<br>$frase: $n<br>";
-
+echo "Soma: ".soma($soma1, $soma2)."<bv><br>";
+echo "par ou impar: ".parOrImpar($res)."<bv><br>";
+echo "Realiza contagem de string: ".countString($nome)."<bv><br>";
+echo "<hr>";
 ?>
