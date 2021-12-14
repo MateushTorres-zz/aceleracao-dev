@@ -1,9 +1,12 @@
 <?php
-$n = 6;
-$fat = 1;
+    $n = 6;
 
-for ($cont = 1; $cont <= $n; $cont++) {
-    $fat = $fat * $cont;
-}
-print $fat;
+    $fatorial = 1;
+
+    for($contador = 1; $contador < $n; $contador++){
+        $fatorial = $fatorial * $contador;
+    }
+
+    print $fatorial; //resultado
+?>
 ?>
