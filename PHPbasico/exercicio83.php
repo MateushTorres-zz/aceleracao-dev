@@ -1,28 +1,30 @@
 <?php
-interface Funcionario{
-    public function funcao();
+interface Profissional{
+    public function work();
 }
-class Designer implements Funcionario{
-    public function funcao()
-    {
-        echo "Design";
+class Compania{
+    public function createSoftware(Profissional $profissional){
+        $profissional->work();
     }
 }
-class Dev implements Funcionario{
-    public function funcao()
-    {
-       echo  "Codigo";
+class Designer implements Profissional{
+    public function work(){
+        $this->designArq();
+    }
+    public function designArq(){
     }
 }
-class Tester implements Funcionario{
-    public function funcao()
-    {
-        echo "Testes";
+class Programmer implements Profissional{
+    public function work(){
+        $this->writeCode();
+    }
+    public function writeCode() {
     }
 }
-class Empresa{
-    function buscaFuncionario(Funcionario $funcionario){
-        echo "Faz: ".$funcionario->funcao();
+class Tester implements Profissional{
+    public function work(){
+        $this->testSoftware();
+    }
+    public function testSoftware() {
     }
 }
-?> 
